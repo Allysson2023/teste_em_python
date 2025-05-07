@@ -41,7 +41,20 @@ def subtrai(a, b):
     assert isinstance(b, (int, float)), 'b precisa ser int ou float'
     return a - b
 
+def somab(c, d):
+    """ Somab c e b
+    >>> somab(15, 15)
+    30
 
+    >>> somab('15', 10)
+    Traceback (most recent call last):
+    ...
+    AssertionError: c Precisa ser int ou float
+
+    """
+    assert isinstance(c, (int, float)), 'c Precisa ser int ou float'
+    assert isinstance(d, (int, float)), 'd Precisa ser int ou float'
+    return c + d
 
 if __name__ == '__main__':
     import doctest
